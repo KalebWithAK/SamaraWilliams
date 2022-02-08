@@ -1,0 +1,20 @@
+:root {
+    --light-gray: #f1f1f1;
+    --blue: #89CFF0;
+    --pink: #f495a7;
+}
+
+body {
+    font-size: 24px;
+    font-family: arial;
+}
+
+h1, h2, h3 {
+    font-family: Helvetica;
+}
+
+img {
+    width: 8em;
+    border: solid 0.25em var(--pink);
+    border-radius: 50%;
+}
