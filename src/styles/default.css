@@ -1,7 +1,16 @@
+/*
+1. Default
+2. Header
+*/
+
+
+/* Default */
+
 :root {
-    --light-gray: #f1f1f1;
-    --blue: #89CFF0;
-    --pink: #f495a7;
+    --light-gray: #d7d5d6;
+    --gray: #535051;
+    --blue: #c5ecfc;
+    --pink: #fbdae0;
 }
 
 body {
@@ -16,5 +25,43 @@ h1, h2, h3 {
 img {
     width: 8em;
     border: solid 0.25em var(--pink);
-    border-radius: 50%;
+    border-radius: 1em;
 }
+
+.light {
+    color: var(--gray);
+}
+
+/* End Default */
+
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--blue);
+    border-radius: 0.25em 0.25em 1em 1em;
+    padding: 0.25em 0;
+}
+
+header > h1, header > section{
+    width: 26.5vw;
+}
+
+header > section > *{
+    margin-left: 5vw;
+}
+
+header > section > a, header > section > a:visited {
+    color: black;
+}
+header > section > a:hover {
+    color: var(--pink);
+}
+
+/* End Header */
