@@ -1,6 +1,7 @@
 /*
 1. Default
 2. Header
+3. Main
 */
 
 
@@ -14,7 +15,7 @@
 }
 
 body {
-    font-size: 24px;
+    font-size: 20px;
     font-family: arial;
 }
 
@@ -23,7 +24,7 @@ h1, h2, h3 {
 }
 
 img {
-    width: 8em;
+    width: 5.5em;
     border: solid 0.25em var(--pink);
     border-radius: 1em;
 }
@@ -65,3 +66,44 @@ header > section > a:hover {
 }
 
 /* End Header */
+
+
+/* Main */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, 10vh);
+    grid-gap: 1em;
+}
+
+main > section {
+    border: solid 0.25em var(--pink);
+    border-radius: 1em;
+}
+
+#bio {
+    grid-column: 1;
+    grid-row: 1/5;
+}
+
+#education {
+    grid-column: 2;
+    grid-row: 1/5;
+}
+
+#experience {
+    grid-column: 1;
+    grid-row: 5/15;
+}
+
+#skills {
+    grid-column: 2;
+    grid-row: 5/9;
+}
+
+#assessments {
+    grid-column: 3;
+    grid-row: 1/15;
+}
+/* End Main */
