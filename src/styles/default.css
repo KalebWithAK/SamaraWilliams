@@ -48,9 +48,10 @@ header {
     background: var(--blue);
     border-radius: 0.25em 0.25em 1em 1em;
     padding: 0.25em 0;
+    margin-bottom: 0.5em;
 }
 
-header > h1, header > section{
+header > h1, header > section {
     width: 26.5vw;
 }
 
@@ -82,9 +83,25 @@ main > section {
     border-radius: 1em;
 }
 
+main > section > * {
+    margin: 0 0.5em;
+}
+
+main > section > h2 {
+    margin: 0.5em 0 1em 0.5em;
+}
+
+main > section > div > * {
+    margin: 0 0.25em;
+}
+
 #bio {
     grid-column: 1;
     grid-row: 1/5;
+}
+
+#bio > ul > li {
+    margin-bottom: 3em;
 }
 
 #education {
@@ -92,9 +109,17 @@ main > section {
     grid-row: 1/5;
 }
 
+#education > div {
+    margin-bottom: 3em;
+}
+
 #experience {
     grid-column: 1;
     grid-row: 5/15;
+}
+
+#experience > div {
+    margin-bottom: 5em;
 }
 
 #skills {
@@ -102,8 +127,21 @@ main > section {
     grid-row: 5/9;
 }
 
+#skills > ul > li {
+    margin-bottom: 0.5em;
+}
+
 #assessments {
     grid-column: 3;
     grid-row: 1/15;
 }
+
+#assessments > div > h3 {
+    font-size: 20px;
+}
+
+#assessments > div {
+    margin-bottom: 5em;
+}
+
 /* End Main */
