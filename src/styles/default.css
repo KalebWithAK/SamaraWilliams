@@ -8,7 +8,7 @@
 /* Default */
 
 :root {
-    --light-gray: #d7d5d6;
+    --light-gray: #cccccc;
     --gray: #535051;
     --blue: #c5ecfc;
     --pink: #fbdae0;
@@ -17,6 +17,7 @@
 body {
     font-size: 20px;
     font-family: arial;
+    background: linear-gradient(90deg, #c5ecfc, #fbdae0);
 }
 
 h1, h2, h3 {
@@ -45,7 +46,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: var(--blue);
+    background: var(--light-gray);
     border-radius: 0.25em 0.25em 1em 1em;
     padding: 0.25em 0;
     margin-bottom: 0.5em;
@@ -79,6 +80,7 @@ main {
 }
 
 main > section {
+    background: var(--blue);
     border: solid 0.25em var(--pink);
     border-radius: 1em;
 }
