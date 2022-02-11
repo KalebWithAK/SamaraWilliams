@@ -2,6 +2,7 @@
 1. Default
 2. Header
 3. Main
+4. Animations
 */
 
 
@@ -17,7 +18,7 @@
 body {
     font-size: 20px;
     font-family: arial;
-    background: linear-gradient(90deg, #c5ecfc, #fbdae0);
+    background: linear-gradient(135deg, #c5ecfc, #fbdae0);
 }
 
 h1, h2, h3 {
@@ -56,15 +57,27 @@ header > h1, header > section {
     width: 26.5vw;
 }
 
-header > section > *{
+header > section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+header > section > * {
     margin-left: 5vw;
+    margin-bottom: 0.5em;
 }
 
 header > section > a, header > section > a:visited {
+    position: relative;
     color: black;
+    text-decoration: none;
 }
 header > section > a:hover {
     color: var(--pink);
+    text-decoration: underline;
+    animation: slideDown 0.25s linear;
 }
 
 /* End Header */
@@ -147,3 +160,20 @@ main > section > div > * {
 }
 
 /* End Main */
+
+
+/* Animations */
+
+@keyframes slideDown {
+    0% {
+        top: 0em;
+    }
+    50% {
+        top: 0.25em;
+    }
+    100% {
+        top: 0em;
+    }
+}
+
+/* End Animations */
