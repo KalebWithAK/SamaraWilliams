@@ -3,6 +3,7 @@
 2. Header
 3. Main
 4. Animations
+5. Responsiveness
 */
 
 
@@ -23,6 +24,10 @@ body {
 
 h1, h2, h3 {
     font-family: Helvetica;
+}
+
+h2 {
+    text-align: center;
 }
 
 img {
@@ -55,6 +60,10 @@ header {
 
 header > h1, header > section {
     width: 26.5vw;
+}
+
+header >img {
+    visibility: visible;
 }
 
 header > section {
@@ -113,6 +122,11 @@ main > section > div > * {
 #bio {
     grid-column: 1;
     grid-row: 1/5;
+}
+
+#bio > img {
+    visibility: hidden;
+    height: 0em;
 }
 
 #bio > ul > li {
@@ -177,3 +191,57 @@ main > section > div > * {
 }
 
 /* End Animations */
+
+
+/* Responsiveness */
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        justify-content: center;
+        gap: 2em;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    header > img {
+        width: 0em;
+        visibility: hidden;
+    }
+    header > section {
+        width: 10.5em;
+    }
+    header > section > * {
+        margin-left: 0px;
+    }
+
+    #bio > img {
+        visibility: visible;
+        width: 10em;
+        margin: 0 6em 0.5em;
+    }
+
+    #experience > div {
+        margin-bottom: 2em;
+    }
+
+    #experience > div:nth-child(5) {
+        margin-bottom: 1em;
+    }
+
+    #assessments {
+        padding-bottom: 1em;
+    }
+}
+
+/* End Responsiveness */
