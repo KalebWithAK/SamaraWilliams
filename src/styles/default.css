@@ -126,7 +126,7 @@ main > section > div > * {
 
 #bio > img {
     visibility: hidden;
-    height: 0em;
+    width: 0em;
 }
 
 #bio > ul > li {
