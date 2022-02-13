@@ -228,6 +228,7 @@ main > section > div > * {
     #bio > img {
         visibility: visible;
         width: 10em;
+        height: auto;
         margin: 0 6em 0.5em;
     }
 
